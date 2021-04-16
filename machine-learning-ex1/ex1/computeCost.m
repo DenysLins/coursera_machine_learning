@@ -14,9 +14,10 @@ J = 0;
 %               You should set J to the cost.
 
 temp = 0;
+
 for i = 1 : m
-  temp = temp + (theta(1) + theta(2) * X(i, 2) - y(i)) ** 2;
-endfor
+  temp = temp + (theta(1) + theta(2) * X(i, 2) - y(i)) ^ 2;
+end
 
 J = temp / (2 * m);
 
